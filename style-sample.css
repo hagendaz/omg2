@@ -39,6 +39,26 @@ p{
     text-align: center;
     color: white;
     font-size: 14px;
-    margin-top: 400px;
+    margin-top: 100px;
 }
 
+
+p:hover{
+  opacity: 50%;
+  cursor: pointer;
+}
+
+@media ( max-width: 768px ) {
+    svg {
+        overflow: visible;
+        width: 100px;
+        margin-top: 150px
+        /* border: 1px solid red; */
+        
+    }
+
+    p:hover{
+        opacity: 100%
+      }
+    
+  }

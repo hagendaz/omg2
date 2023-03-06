@@ -24,7 +24,7 @@ svgs.forEach((svg) => {
     paths.forEach(path => {
       const length = path.getTotalLength();
 
-      for (let i = 0; i < length; i += 1) {
+      for (let i = 0; i < length; i += 2) {
         const pointLength = i;
 
         const point = path.getPointAtLength(pointLength);
@@ -57,6 +57,9 @@ svgs.forEach((svg) => {
   }
   generatePoints();
 })
+window.addEventListener('click', () => {
+  startAnimation();
+});
 }
 
 
